@@ -1,6 +1,8 @@
 defmodule KV.Application do
   use Application
 
+  @moduledoc false
+
   @impl true
   def start(_type, _args) do
     topologies = [

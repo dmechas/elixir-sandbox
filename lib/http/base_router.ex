@@ -1,6 +1,8 @@
 defmodule KV.BaseRouter do
   use Plug.Router
 
+  @moduledoc false
+
   plug(:match)
   plug(:dispatch)
 

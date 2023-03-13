@@ -1,6 +1,8 @@
 defmodule KV.HTTP.HealthRouter do
   use Plug.Router
 
+  @moduledoc false
+
   alias KV.Cache
 
   plug(:match)
