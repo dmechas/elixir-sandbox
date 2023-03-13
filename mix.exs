@@ -24,7 +24,8 @@ defmodule KV.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:libcluster, "~> 3.3"},
       {:nebulex, "~> 2.4"},
-      {:jason, "~> 1.3"}
+      {:jason, "~> 1.3"},
+      {:mix_test_watch, "~> 1.1", only: :dev, runtime: false}
     ]
   end
 end
