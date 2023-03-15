@@ -20,11 +20,12 @@ defmodule KV.MixProject do
 
   defp deps do
     [
-      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:plug_cowboy, "~> 2.0"},
       {:libcluster, "~> 3.3"},
       {:nebulex, "~> 2.4"},
       {:jason, "~> 1.3"},
+      # Test & Code Analysis
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:mix_test_watch, "~> 1.1", only: :dev, runtime: false}
     ]
   end
