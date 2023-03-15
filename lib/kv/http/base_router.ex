@@ -1,4 +1,4 @@
-defmodule KV.BaseRouter do
+defmodule KV.HTTP.BaseRouter do
   use Plug.Router
 
   @moduledoc false

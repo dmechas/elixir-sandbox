@@ -7,7 +7,8 @@ defmodule KV.MixProject do
       version: "0.1.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      aliases: aliases()
     ]
   end
 
@@ -27,6 +28,16 @@ defmodule KV.MixProject do
       # Test & Code Analysis
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:mix_test_watch, "~> 1.1", only: :dev, runtime: false}
+    ]
+  end
+
+  defp aliases do
+    [
+      check: [
+        "compile --warnings-as-errors",
+        "format --check-formatted",
+        "credo --strict"
+      ]
     ]
   end
 end

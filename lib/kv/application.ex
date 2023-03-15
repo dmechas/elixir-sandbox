@@ -18,7 +18,7 @@ defmodule KV.Application do
       {
         Plug.Cowboy,
         scheme: :http,
-        plug: KV.BaseRouter,
+        plug: KV.HTTP.BaseRouter,
         options: Application.get_env(:kv, :base_router_endpoint)
       }
     ]
