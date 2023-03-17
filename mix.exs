@@ -25,6 +25,7 @@ defmodule KV.MixProject do
       {:libcluster, "~> 3.3"},
       {:nebulex, "~> 2.4"},
       {:jason, "~> 1.3"},
+      {:decorator, "~> 1.4"},
       # Test & Code Analysis
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:mix_test_watch, "~> 1.1", only: :dev, runtime: false}
